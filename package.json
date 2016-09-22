@@ -1,0 +1,14 @@
+{
+  "name": "z-switch",
+  "version": "1.0.0",
+  "description": "css switch by ZeZeN",
+  "scripts": {
+    "sass": "node-sass sass/ -o css/",
+    "sass:watch": "npm run sass -- -w -r"
+  },
+  "author": "Benjamin Caradeuc <bencrdc@gmail.com> (http://caradeuc.info)",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^3.10.0"
+  }
+}

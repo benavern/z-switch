@@ -1,0 +1,52 @@
+.z-switch *, .z-switch *:before, .z-switch *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.z-switch .z-switch--container {
+  position: relative;
+  top: 4px;
+  display: inline-block;
+  width: 3rem;
+  height: 1.4rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.3) inset;
+  margin-right: .2em;
+  background-color: gray;
+  cursor: pointer;
+  overflow: hidden;
+  transition: .2s background-color; }
+  .z-switch .z-switch--container .z-switch--slider {
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1rem;
+    background-color: silver;
+    transform: translateX(0);
+    transition: .2s transform; }
+
+.z-switch input[type=checkbox] {
+  display: none; }
+  .z-switch input[type=checkbox]:checked + .z-switch--container {
+    background-color: green; }
+    .z-switch input[type=checkbox]:checked + .z-switch--container .z-switch--slider {
+      transform: translateX(1.6rem); }
+
+.z-switch.z-switch--labels .z-switch--container .z-switch--slider:before, .z-switch.z-switch--labels .z-switch--container .z-switch--slider:after {
+  content: "ON";
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: .2rem;
+  font-size: .5rem;
+  width: 1.5rem;
+  left: -1.6rem;
+  text-align: center;
+  text-shadow: 1px 1px 1px black; }
+
+.z-switch.z-switch--labels .z-switch--container .z-switch--slider:after {
+  content: "OFF";
+  left: 1.1rem; }
