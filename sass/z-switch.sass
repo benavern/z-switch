@@ -1,5 +1,11 @@
-$z-switch-off    : #d22
-$z-switch-on     : #2d2
+// google colors
+// $z-switch-off    : #EA4335
+// $z-switch-on     : #34A853
+
+// mac colors
+$z-switch-off    : #FF6059 
+$z-switch-on     : #2ACB41
+
 $z-switch-slider : #ddd
 $z-switch-text   : #eee
 
@@ -10,18 +16,23 @@ $z-switch-text   : #eee
         padding: 0
         box-sizing: border-box
         font-family: sans-serif
+    
+    &.z-switch-sm
+        font-size: .75em
+    &.z-switch-lg
+        font-size: 1.5em
 
     &:hover
         cursor: pointer
     
     .z-switch--container
         position: relative
-        top: .2em
+        top: .1em
         display: inline-block
-        width: 2.75em
+        width: 2.5em
         height: 1em
         border-radius: 1em
-        box-shadow: 0 0 .2em 0 rgba(black, .8) inset
+        // box-shadow: 0 0 .2em 0 rgba(black, .8) inset
         margin-right: .2em
         background-color: $z-switch-off
         overflow: hidden
@@ -30,13 +41,13 @@ $z-switch-text   : #eee
 
         .z-switch--slider
             position: absolute
-            top: .08em
-            left: .1em
-            width: .8em
-            height: .8em
+            top: .05em
+            left: .05em
+            width: .9em
+            height: .9em
             border-radius: 1em
             background-color: $z-switch-slider
-            box-shadow: 0 0 0.2em rgba(white, .8) inset
+            box-shadow: 0 0 0.3em rgba(white, .7) inset, 0 0 .3em 0 rgba(black, .5)
             transform: translateX(0)
             transition: .2s transform
             &:before, &:after
@@ -46,8 +57,8 @@ $z-switch-text   : #eee
                 position: absolute
                 top: .15em
                 font-size: .6em
-                width: 3em
-                left: -3em
+                width: 2.8em
+                left: -2.7em
                 text-align: center
                 text-shadow: 1px 1px 1px black
             &:after
@@ -61,7 +72,7 @@ $z-switch-text   : #eee
             background-color: $z-switch-on
 
             .z-switch--slider
-                transform: translateX(1.75em)
+                transform: translateX(1.55em)
 
         
             
