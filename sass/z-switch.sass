@@ -18,18 +18,20 @@ $z-switch-text   : #eee
         font-family: sans-serif
     
     &.z-switch-sm
-        font-size: .75em
+        .z-switch--container
+            font-size: .8em
     &.z-switch-lg
-        font-size: 1.5em
+        .z-switch--container
+            font-size: 1.5em   
 
     &:hover
         cursor: pointer
     
     .z-switch--container
         position: relative
-        top: .1em
+        top: .15em
         display: inline-block
-        width: 2.5em
+        width: 2em
         height: 1em
         border-radius: 1em
         // box-shadow: 0 0 .2em 0 rgba(black, .8) inset
@@ -41,11 +43,11 @@ $z-switch-text   : #eee
 
         .z-switch--slider
             position: absolute
-            top: .05em
-            left: .05em
-            width: .9em
-            height: .9em
-            border-radius: 1em
+            top: 5%
+            left: 2.5%
+            width: 45%
+            height: 90%
+            border-radius: 50%
             background-color: $z-switch-slider
             box-shadow: 0 0 0.3em rgba(white, .7) inset, 0 0 .3em 0 rgba(black, .5)
             transform: translateX(0)
@@ -55,15 +57,16 @@ $z-switch-text   : #eee
                 color: $z-switch-text
                 display: block
                 position: absolute
-                top: .15em
-                font-size: .6em
-                width: 2.8em
-                left: -2.7em
+                top: 25%
+                font-size: .45em
+                width: 100%
+                right: 100%
                 text-align: center
                 text-shadow: 1px 1px 1px black
             &:after
-                content: attr(data-off) 
-                left: 1.2em
+                content: attr(data-off)
+                right: auto
+                left: 100%
 
     input[type=checkbox]
         display: none
@@ -72,7 +75,7 @@ $z-switch-text   : #eee
             background-color: $z-switch-on
 
             .z-switch--slider
-                transform: translateX(1.55em)
+                transform: translateX(1em)
 
         
             
