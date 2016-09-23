@@ -4,26 +4,47 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/z-switch.css">
 </head>
 <body>
-    <h1>Z-Switch</h1>
-    <div>
-        <label class="z-switch">
-            <input type="checkbox">
-            <div class="z-switch--container">
-                <div class="z-switch--slider"></div>
-            </div>
-            Hello, World!
-        </label>
-    </div>
-    <div>
-        <label class="z-switch z-switch--labels">
-            <input type="checkbox">
-            <div class="z-switch--container">
-                <div class="z-switch--slider"></div>
-            </div>
-            Hello, World!
-        </label>
+    <div class="container">
+        <h1>Z-Switch</h1>
+        <div>
+            <label class="z-switch">
+                <input type="checkbox">
+                <div class="z-switch--container">
+                    <div class="z-switch--slider"></div>
+                </div>
+                Hello, World!
+            </label>
+        </div>
+        <div>
+            <label class="z-switch">
+                <input type="checkbox">
+                <div class="z-switch--container">
+                    <div class="z-switch--slider" data-on="ON" data-off="OFF"></div>
+                </div>
+                Hello, World!
+            </label>
+        </div>
+        <div>
+            <label class="z-switch">
+                <input type="checkbox">
+                <div class="z-switch--container">
+                    <div class="z-switch--slider" data-on="|" data-off="O"></div>
+                </div>
+                Hello, World!
+            </label>
+        </div>
+        <div>
+            <label class="z-switch">
+                <input type="checkbox">
+                <div class="z-switch--container">
+                    <div class="z-switch--slider" data-on="YES" data-off="NO"></div>
+                </div>
+                Hello, World!
+            </label>
+        </div>
     </div>
 </body>
 </html>

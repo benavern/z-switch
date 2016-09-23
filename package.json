@@ -3,12 +3,17 @@
   "version": "1.0.0",
   "description": "css switch by ZeZeN",
   "scripts": {
-    "sass": "node-sass sass/ -o css/",
-    "sass:watch": "npm run sass -- -w -r"
+    "sass": "node-sass -i --output-style=compressed --source-map=true sass/ -o css/",
+    "sass:watch": "npm run sass -- -w -r",
+    "serve": "lite-server",
+    "predev": "rm -rf css/ && npm run sass",
+    "dev": "npm-run-all --parallel serve sass:watch"
   },
   "author": "Benjamin Caradeuc <bencrdc@gmail.com> (http://caradeuc.info)",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^3.10.0"
+    "lite-server": "^2.2.2",
+    "node-sass": "^3.10.0",
+    "npm-run-all": "^3.1.0"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "port": 8888,
+  "files": [
+    "./index.html", 
+    "./css/**/*.css"
+    ],
+  "server": { 
+    "baseDir": "./" 
+    }
+}
