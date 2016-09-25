@@ -6,8 +6,8 @@
 $z-switch-off    : #FF6059 
 $z-switch-on     : #2ACB41
 
-$z-switch-slider : #ddd
-$z-switch-text   : #eee
+$z-switch-slider : #fefefe
+$z-switch-text   : #fefefe
 
 
 .z-switch
@@ -19,10 +19,11 @@ $z-switch-text   : #eee
     
     &.z-switch-sm
         .z-switch--container
-            font-size: .75em
+            font-size: .65em
+
     &.z-switch-lg
         .z-switch--container
-            font-size: 1.5em
+            font-size: 1.34em
 
     &:hover
         cursor: pointer
@@ -34,11 +35,10 @@ $z-switch-text   : #eee
         width: 2em
         height: 1em
         border-radius: 1em
-        margin-right: .2em
         background-color: $z-switch-off
         overflow: hidden
         transition: .2s background-color
-
+        box-shadow: 0 0 .1em 0 rgba(black, .5)
 
         .z-switch--slider
             position: absolute
@@ -51,6 +51,7 @@ $z-switch-text   : #eee
             box-shadow: 0 0 .2em 0 rgba(black, .5)
             transform: translateX(0)
             transition: .2s transform
+
             &:before, &:after
                 content: attr(data-on)
                 color: $z-switch-text
@@ -63,6 +64,7 @@ $z-switch-text   : #eee
                 right: 105%
                 text-align: center
                 text-shadow: .05em .05em .1em rgba(black, .5)
+                
             &:after
                 content: attr(data-off)
                 right: auto

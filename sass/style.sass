@@ -1,29 +1,79 @@
 html
     font-size: 25px
+    line-height: 1.6
 
 body
-    font-family: sans-serif
+    font-family: 'Poiret One', sans-serif
+    color: #333
 
 *,*:before,*:after
     margin: 0
     padding: 0
     box-sizing: border-box
 
+a
+    color: inherit
+
 .container
+    width: 100%
     max-width: 640px
+    padding: 0 10px
     margin: 0 auto
 
 header
-    padding: 4rem 0
     text-align: center
-    font-size: 3rem
-    // min-height: 100vh
-    background-color: #333
-    color: white
+    font-size: 3.5rem
+    min-height: 100vh
+    background:
+        color: #ddd
+        image: linear-gradient(to top, #bbb, #fff)
+    color: #333
+    
+    .container
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+    
+    a.back-to-lab
+        position: absolute
+        font-family: sans-serif
+        top: .5rem
+        left: .5rem
+        font-size: .7rem
+        text-decoration: none
+        border: 2px #444 solid
+        border-radius: .2em
+        padding: .2em .5em
+        opacity: .1
+        transition: opacity .5s
+
+        &:hover
+            opacity: .8
+
+
 
 section
     padding: 3rem 0
-    border-bottom: 2px solid silver
+    text-align: center
+
+    &:nth-child(2n+1)
+        background:
+            color: #ddd
+            image: linear-gradient(to top, #ccc, #eee)
+
+
+footer
+    background:
+        color: #333
+        image: linear-gradient(to top, #111, #555)
+    color: #eee
+    text-align: center
+    padding: 5rem 0
 
 
 
+
+@media(max-width: 640px)
+    html
+        font-size: 18px
