@@ -101,7 +101,7 @@ $z-switch-on     : #2ACB41
 $z-switch-slider : #FEFEFE
 $z-switch-text   : #FEFEFE
 ```
-For example, if you want to reproduce the `z-switch-alt` class, youll have to override variables this way :
+For example, if you want to reproduce the `z-switch-color1` class, youll have to override variables this way :
 
 ```sass
 $z-switch-off    : #CCCCCC
