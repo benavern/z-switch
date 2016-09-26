@@ -2,6 +2,12 @@
   "name": "z-switch",
   "version": "1.0.0",
   "description": "css switch by ZeZeN",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benavern/z-switch.git"
+  },
+  "homepage": "http://blog.caradeuc.info/z-switch",
+  "main": "sass/z-switch.sass",
   "scripts": {
     "sass": "node-sass -i --output-style=compressed --source-map=true sass/ -o css/",
     "sass:watch": "npm run sass -- -w -r",
