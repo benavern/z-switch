@@ -53,6 +53,13 @@ header
 
         &:hover
             opacity: .8
+    
+    .to-main
+        position: absolute
+        bottom: 0
+        left: 50%
+        transform: translate(-50%, 0)
+        animation: bounce infinite 2s 1s
 
 section
     padding: 3rem 0
@@ -98,3 +105,14 @@ body.dark
     header
         a.back-to-lab
             opacity: .6
+
+
+@keyframes bounce
+    0%
+        transform: translate(-50%, 0)
+    10%
+        transform: translate(-50%, -25%)
+    20%
+        transform: translate(-50%, 10%)
+    30%
+        transform: translate(-50%, 0)

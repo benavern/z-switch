@@ -31,9 +31,10 @@
                 </a>
             </div>
         </div>
+        <a href="#main" class="to-main"><i class="fa fa-angle-down"></i></a>
     </header>
         
-    <section>
+    <section id="main">
         <div class="container">
 
             <label class="z-switch">
@@ -153,12 +154,16 @@
 
         (function() {
 
-            document.querySelector('header label.z-switch').addEventListener('change', function(e) {
+            /**
+             * Main switch toggles in dark mode
+             */
+            var mainSwitch = document.querySelector('header label.z-switch');
+            mainSwitch.addEventListener('change', function() {
                 document.body.classList.toggle('dark')
-            })
+            });
 
         })();
-        
+
     </script>
 
 </body>

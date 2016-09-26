@@ -3,11 +3,8 @@
 # Z-Switch
 Simple & stylish replacement for checkboxes, made with css only
 
---- 
+# [Demo](http://blog.caradeuc.info/z-switch)
 
-## [Demo](http://blog.caradeuc.info/z-switch)
-
---- 
 
 ## How to
 
