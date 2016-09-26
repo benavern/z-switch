@@ -85,14 +85,14 @@ For exemple here we will add "ON" & "OFF" labels :
 
 Two alternative colors are available for the switches, you can use it by adding classes 
 
-* `z-switch-color1` class.
+* `z-switch-color1`
 
 ![screenshot4](img/screenshot4.jpg)
 
 
-* `z-switch-color1` class.
+* `z-switch-color2`
 
-![screenshot4](img/screenshot4.jpg)
+![screenshot4bis](img/screenshot4bis.jpg)
 
 #### The sass way
 
