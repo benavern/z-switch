@@ -1,10 +1,14 @@
+$white : #fefefe
+$black : #333
+
 html
     font-size: 25px
     line-height: 1.6
 
 body
     font-family: 'Poiret One', sans-serif
-    color: #333
+    background-color: $white
+    color: $black
 
 *,*:before,*:after
     margin: 0
@@ -27,7 +31,6 @@ header
     background:
         color: #ddd
         image: linear-gradient(to top, #bbb, #fff)
-    color: #333
     
     .container
         position: absolute
@@ -42,25 +45,23 @@ header
         left: .5rem
         font-size: .7rem
         text-decoration: none
-        border: 2px #444 solid
+        border: .1em $black solid
         border-radius: .2em
         padding: .2em .5em
-        opacity: .1
+        opacity: .3
         transition: opacity .5s
 
         &:hover
             opacity: .8
 
-
-
 section
     padding: 3rem 0
     text-align: center
 
-    &:nth-child(2n+1)
-        background:
-            color: #ddd
-            image: linear-gradient(to top, #ccc, #eee)
+    // &:nth-child(2n+1)
+    //     background:
+    //         color: #ddd
+    //         image: linear-gradient(to top, #ccc, #eee)
 
 
 footer
@@ -72,8 +73,28 @@ footer
     padding: 5rem 0
 
 
+.pink
+    color: pink
 
+
+body.dark
+    background-color: $black
+    color: $white
+
+    header
+        background:
+            color: #111
+            image: linear-gradient(to top, #444, #111)
+        
+        a.back-to-lab
+            color: $white
+            border: .1em $white solid
+            
 
 @media(max-width: 640px)
     html
         font-size: 18px
+    
+    header
+        a.back-to-lab
+            opacity: .6

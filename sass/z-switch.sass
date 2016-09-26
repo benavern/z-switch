@@ -1,14 +1,7 @@
-// google colors
-// $z-switch-off    : #EA4335
-// $z-switch-on     : #34A853
-
-// mac colors
-$z-switch-off    : #FF6059 
+$z-switch-off    : #FF6059
 $z-switch-on     : #2ACB41
-
-$z-switch-slider : #fefefe
-$z-switch-text   : #fefefe
-
+$z-switch-slider : #FEFEFE
+$z-switch-text   : #FEFEFE
 
 .z-switch
     *, *:before, *:after
@@ -34,7 +27,7 @@ $z-switch-text   : #fefefe
         display: inline-block
         width: 2em
         height: 1em
-        border-radius: 1em
+        border-radius: .5em
         background-color: $z-switch-off
         overflow: hidden
         transition: .2s background-color
@@ -46,7 +39,7 @@ $z-switch-text   : #fefefe
             left: 2.5%
             width: 45%
             height: 90%
-            border-radius: 50%
+            border-radius: .5em
             background-color: $z-switch-slider
             box-shadow: 0 0 .2em 0 rgba(black, .5)
             transform: translateX(0)
@@ -79,7 +72,30 @@ $z-switch-text   : #fefefe
             .z-switch--slider
                 transform: translateX(1em)
 
+
+    // alt colors
+    &.z-switch-color1
+        .z-switch--container
+            background-color: #CCCCCC
+        input[type=checkbox]
+                &:checked + .z-switch--container
+                    background-color: #03A9F4
+    &.z-switch-color2
+        .z-switch--container
+            background-color: #FAFAFA
+        input[type=checkbox]
+                &:checked + .z-switch--container
+                    background-color: #FAFAFA
         
-            
-            
-            
+    // alt shapes
+    &.z-switch-square
+        .z-switch--container
+            border-radius: .1em
+            .z-switch--slider
+                border-radius: .05em
+
+    &.z-switch-tictac
+        .z-switch--container
+            border-radius: .5em .1em
+            .z-switch--slider
+                border-radius: .45em .05em

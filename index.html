@@ -2,24 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Z-Switch</title>
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://labo.caradeuc.info/z-tooltips/download/z-toltips.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/z-switch.css">
 </head>
 <body>
     <header>
-        <a href="http://labo.caradeuc.info" class="back-to-lab">&lt;&nbsp;Labo</a>
+        <a href="http://labo.caradeuc.info" class="back-to-lab"><i class="fa fa-angle-left"></i> Labo</a>
         <div class="container">
-            <label class="z-switch">
+            <label class="z-switch z-switch-lg">
                 <input type="checkbox" checked>
                 <div class="z-switch--container">
                     <div class="z-switch--slider" data-on="I" data-off="O"></div>
-                </div>
-                <br>
-                Z-Switch
+                </div><br>Z-Switch
             </label>
+            <div class="links">
+                <a href="http://github.com/benavern/z-switch" 
+                    class="github z-tooltips-bottom" 
+                    data-ztooltips="View on GitHub"><i class="fa fa-github"></i></a>
+                <a href="css/z-switch.css" 
+                    class="download z-tooltips-bottom" 
+                    data-ztooltips="Download the css version">
+                    <i class="fa fa-cloud-download"></i>
+                </a>
+            </div>
         </div>
     </header>
         
@@ -27,7 +37,7 @@
         <div class="container">
 
             <label class="z-switch">
-                Default
+                Normal
                 <input type="checkbox">
                 <div class="z-switch--container">
                     <div class="z-switch--slider"></div>
@@ -39,7 +49,7 @@
                 <div class="z-switch--container">
                     <div class="z-switch--slider"></div>
                 </div>
-                Default
+                Checked
             </label>
             
         </div>
@@ -49,7 +59,7 @@
         <div class="container">
 
             <label class="z-switch">
-                With text
+                With text OFF
                 <input type="checkbox">
                 <div class="z-switch--container">
                     <div class="z-switch--slider" data-on="ON" data-off="OFF"></div>
@@ -61,7 +71,7 @@
                 <div class="z-switch--container">
                     <div class="z-switch--slider" data-on="ON" data-off="OFF"></div>
                 </div>
-                With text
+                With text ON
             </label>
 
         </div>
@@ -70,20 +80,20 @@
     <section>
         <div class="container">
 
-            <label class="z-switch">
-                With symboles
+            <label class="z-switch z-switch-square">
+                Square shape
                 <input type="checkbox">
                 <div class="z-switch--container">
-                    <div class="z-switch--slider" data-on="|" data-off="O"></div>
+                    <div class="z-switch--slider" data-on="I" data-off="O"></div>
                 </div>
             </label>
 
-            <label class="z-switch">
+            <label class="z-switch z-switch-tictac">
                 <input type="checkbox" checked>
                 <div class="z-switch--container">
                     <div class="z-switch--slider" data-on="I" data-off="O"></div>
                 </div>
-                With symboles
+                Tic Tac shape
             </label>
 
         </div>
@@ -100,44 +110,56 @@
                 </div>
             </label>
 
-            <label class="z-switch z-switch-sm">
+            <label class="z-switch z-switch-lg">
                 <input type="checkbox" checked>
                 <div class="z-switch--container">
                     <div class="z-switch--slider"></div>
                 </div>
-                Small size
+                Large size
+            </label>
+
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+
+            <label class="z-switch z-switch-color1">
+                Color 1
+                <input type="checkbox" checked>
+                <div class="z-switch--container">
+                    <div class="z-switch--slider"></div>
+                </div>
+            </label>
+
+            <label class="z-switch z-switch-color2">
+                <input type="checkbox">
+                <div class="z-switch--container">
+                    <div class="z-switch--slider"></div>
+                </div>
+                Color 2
             </label>
 
         </div>
     </section>
     
-    <section>
-        <div class="container">
-
-            <label class="z-switch z-switch-lg">
-                Large size
-                <input type="checkbox">
-                <div class="z-switch--container">
-                    <div class="z-switch--slider" data-on="Yes" data-off="No"></div>
-                </div>
-            </label>
-
-            <label class="z-switch z-switch-lg">
-                <input type="checkbox" checked>
-                <div class="z-switch--container">
-                    <div class="z-switch--slider" data-on="Yes" data-off="No"></div>
-                </div>
-                Large size
-            </label>
-
-        </div>
-    </section>
-
     <footer>
         <div class="container">
-            Made with <b>&lt;/&gt;</b> by <a href="http://caradeuc.info">Benjamin Caradeuc</a>
+            Made with <span data-ztooltips="LOL == Lot Of Love"><i class="fa fa-heart pink"></i></span> by <a href="http://caradeuc.info">Benjamin Caradeuc</a>
         </div>
     </footer>
     
+    <script>
+
+        (function() {
+
+            document.querySelector('header label.z-switch').addEventListener('change', function(e) {
+                document.body.classList.toggle('dark')
+            })
+
+        })();
+        
+    </script>
+
 </body>
 </html>
