@@ -111,11 +111,13 @@ $z-switch-color1-on     : #03A9F4
 $z-switch-color2-off    : #FAFAFA
 $z-switch-color2-on     : #FAFAFA
 ```
-For example, if you want to reproduce the `z-switch-color1` class, you'll have to override variables this way :
+Here is an example with custom colors :
 
 ```sass
-$z-switch-off    : #CCCCCC
-$z-switch-on     : #03A9F4
+$z-switch-off    : #ffbb59
+$z-switch-on     : #cb2aaa
+$z-switch-slider : #3ed421
 ```
 
+![screenshot5](img/screenshot5.jpg)
 
