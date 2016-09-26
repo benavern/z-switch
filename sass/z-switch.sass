@@ -1,7 +1,16 @@
+// default colors
 $z-switch-off    : #FF6059
 $z-switch-on     : #2ACB41
 $z-switch-slider : #FEFEFE
 $z-switch-text   : #FEFEFE
+
+// color1 alternative
+$z-switch-color1-off    : #CCCCCC
+$z-switch-color1-on     : #03A9F4
+
+// color2 alternative
+$z-switch-color2-off    : #FAFAFA
+$z-switch-color2-on     : #FAFAFA
 
 .z-switch
     *, *:before, *:after
@@ -76,16 +85,16 @@ $z-switch-text   : #FEFEFE
     // alt colors
     &.z-switch-color1
         .z-switch--container
-            background-color: #CCCCCC
+            background-color: $z-switch-color1-off
         input[type=checkbox]
                 &:checked + .z-switch--container
-                    background-color: #03A9F4
+                    background-color: $z-switch-color1-on
     &.z-switch-color2
         .z-switch--container
-            background-color: #FAFAFA
+            background-color: $z-switch-color2-off
         input[type=checkbox]
                 &:checked + .z-switch--container
-                    background-color: #FAFAFA
+                    background-color: $z-switch-color2-off
         
     // alt shapes
     &.z-switch-square

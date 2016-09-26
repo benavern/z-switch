@@ -1,7 +1,7 @@
 ![banner](img/banner.png)
 
 # Z-Switch
-Simple & stylish replacement for checkboxes, made with css only
+Simple & stylish replacement for checkboxes, made with css only.
 
 # [Demo](http://blog.caradeuc.info/z-switch)
 
@@ -28,9 +28,28 @@ The simplest way to use it is with this html structure :
 
 #### Default checked ? 
 
-If you want the checkbox to be checked by default, add it the checked attribute as usual.
+If you want the checkbox to be checked by default, add it the `checked` attribute.
 
 ![screenshot1bis](img/screenshot1bis.jpg)
+
+### ON & OFF labels
+
+It is possible to add some text on the switchs to illustrate theire states. (max 3 chars)
+
+For exemple here we will add "ON" & "OFF" labels : 
+
+```html
+<label class="z-switch">
+    // text can go there
+    <input type="checkbox">
+    <div class="z-switch--container">
+        <div class="z-switch--slider" data-on="ON" data-off="OFF"></div>
+    </div>
+    // text can go there
+</label>
+```
+
+![screenshot3](img/screenshot3.jpg)
 
 ### Different sizes
 
@@ -55,27 +74,9 @@ Z-Switchs are circled by default, you can add these classes to change the shape 
 
 ![screenshotTictac](img/screenshotTictac.jpg)
 
-### ON & OFF labels
-
-It is possible to add some text on the switchs to illustrate theire states. (max 3 chars)
-
-For exemple here we will add "ON" & "OFF" labels : 
-
-```html
-<label class="z-switch">
-    // text can go there
-    <input type="checkbox">
-    <div class="z-switch--container">
-        <div class="z-switch--slider" data-on="ON" data-off="OFF"></div>
-    </div>
-    // text can go there
-</label>
-```
-
-![screenshot3.](img/screenshot3.jpg)
 
 
-### Colors
+### Different colors
 
 
 #### The classes way
@@ -96,12 +97,21 @@ Two alternative colors are available for the switches, you can use it by adding 
 You can override the sass variables to change the switches colors, default ones are : 
 
 ```sass
+// default colors
 $z-switch-off    : #FF6059
 $z-switch-on     : #2ACB41
 $z-switch-slider : #FEFEFE
 $z-switch-text   : #FEFEFE
+
+// color1 alternative
+$z-switch-color1-off    : #CCCCCC
+$z-switch-color1-on     : #03A9F4
+
+// color2 alternative
+$z-switch-color2-off    : #FAFAFA
+$z-switch-color2-on     : #FAFAFA
 ```
-For example, if you want to reproduce the `z-switch-color1` class, youll have to override variables this way :
+For example, if you want to reproduce the `z-switch-color1` class, you'll have to override variables this way :
 
 ```sass
 $z-switch-off    : #CCCCCC
