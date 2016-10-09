@@ -6,9 +6,37 @@ Simple & stylish replacement for checkboxes, made with css only.
 # [Demo](http://blog.caradeuc.info/z-switch)
 
 
-## How to
+# How to
 
-### The default one : 
+## Installation
+
+```
+npm i -S z-switch
+```
+
+### Import the css stylesheet 
+
+``` html
+// index.html
+<link rel="stylesheet" href="node_modules/z-switch/css/z-switch.css">
+```
+
+### OR use the sass one
+
+For example, you can include it via the sass includePath option of node-sass
+
+```
+// npm scripts
+node-sass --include-path="node_modules/z-switch/sass/"  sass/style.sass css/style.css
+```
+
+```sass
+// style.sass
+@import 'z-switch'
+```
+
+
+## The default one : 
 
 The simplest way to use it is with this html structure :
 
@@ -26,13 +54,13 @@ The simplest way to use it is with this html structure :
 
 ![screenshot1](img/screenshot1.jpg)
 
-#### Default checked ? 
+### Default checked ? 
 
 If you want the checkbox to be checked by default, add it the `checked` attribute.
 
 ![screenshot1bis](img/screenshot1bis.jpg)
 
-### ON & OFF labels
+## ON & OFF labels
 
 It is possible to add some text on the switchs to illustrate theire states. (max 3 chars)
 
@@ -51,7 +79,7 @@ For exemple here we will add "ON" & "OFF" labels :
 
 ![screenshot3](img/screenshot3.jpg)
 
-### Different sizes
+## Different sizes
 
 Z-Switchs will always fit the parent font size, but it'zs possible to ask for smaller or bigger ones
 
@@ -62,7 +90,7 @@ Z-Switchs will always fit the parent font size, but it'zs possible to ask for sm
 
 ![screenshot2](img/screenshot2.jpg)
 
-### Different shapes
+## Different shapes
 
 Z-Switchs are circled by default, you can add these classes to change the shape :
 
@@ -76,10 +104,10 @@ Z-Switchs are circled by default, you can add these classes to change the shape 
 
 
 
-### Different colors
+## Different colors
 
 
-#### The classes way
+### The classes way
 
 Two alternative colors are available for the switches, you can use it by adding classes 
 
@@ -92,7 +120,7 @@ Two alternative colors are available for the switches, you can use it by adding 
 
 ![screenshot4bis](img/screenshot4bis.jpg)
 
-#### The sass way
+### The sass way
 
 You can override the sass variables to change the switches colors, default ones are : 
 

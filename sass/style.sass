@@ -61,15 +61,24 @@ header
         transform: translate(-50%, 0)
         animation: bounce infinite 2s 1s
 
+    .links
+        a
+            text-decoration: none
+            &:hover
+                text-shadow: 0 0 15px gray
+        .npm
+            font-family: "Trebuchet MS", Helvetica, sans-serif
+            font-weight: bold
+            letter-spacing: -0.1em
+
+            &:before
+                font-family: 'Poiret One', sans-serif
+                font-weight: normal
+                letter-spacing: initial
+
 section
     padding: 3rem 0
     text-align: center
-
-    // &:nth-child(2n+1)
-    //     background:
-    //         color: #ddd
-    //         image: linear-gradient(to top, #ccc, #eee)
-
 
 footer
     background:

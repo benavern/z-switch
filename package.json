@@ -1,6 +1,6 @@
 {
   "name": "z-switch",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "css switch by ZeZeN",
   "repository": {
     "type": "git",
@@ -9,11 +9,12 @@
   "homepage": "http://blog.caradeuc.info/z-switch",
   "main": "sass/z-switch.sass",
   "scripts": {
-    "sass": "node-sass -i --output-style=compressed --source-map=true sass/ -o css/",
+    "sass": "node-sass -i --output-style=compressed sass/ -o css/",
     "sass:watch": "npm run sass -- -w -r",
     "serve": "lite-server",
     "predev": "rm -rf css/ && npm run sass",
-    "dev": "npm-run-all --parallel serve sass:watch"
+    "dev": "npm-run-all --parallel serve sass:watch",
+    "start": "npm run dev"
   },
   "author": "Benjamin Caradeuc <bencrdc@gmail.com> (http://caradeuc.info)",
   "license": "MIT",
