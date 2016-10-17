@@ -136,7 +136,7 @@
         <div class="container">
 
             <label class="z-switch z-switch-color1">
-                Color 1
+                Color 1 (macOS)
                 <input type="checkbox" checked>
                 <div class="z-switch--container">
                     <div class="z-switch--slider"></div>
@@ -148,7 +148,7 @@
                 <div class="z-switch--container">
                     <div class="z-switch--slider"></div>
                 </div>
-                Color 2
+                Color 2 (dark)
             </label>
 
         </div>
@@ -194,7 +194,35 @@
                 document.body.classList.toggle('dark')
             });
 
+            /**
+             * Smooth scroll
+             */
+            var scrollLinks = document.querySelectorAll('a[href^="#"]');
+            [].forEach.call(scrollLinks, function(link) {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    smoothScroll(this.getAttribute('href'), 40);
+                })
+            })
+
         })();
+
+        function smoothScroll(toEl, speed) {
+            var from = window.scrollY;
+            var to = document.querySelector(toEl).offsetTop;
+            var dir =  from > to ? -1 : 1;
+            var dif = Math.abs(to - from);
+
+            if(dif < speed){
+                window.scroll(0, to);
+                return;
+            }
+            else {
+                window.scroll(0, (from + speed) * dir);
+                setTimeout(smoothScroll.bind(this, toEl, speed), 16);
+            }
+
+        }
 
     </script>
 

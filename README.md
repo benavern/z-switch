@@ -134,10 +134,12 @@ $z-switch-text   : #FEFEFE
 // color1 alternative
 $z-switch-color1-off    : #CCCCCC
 $z-switch-color1-on     : #03A9F4
+$z-switch-color1-slider : #F4F4F4
 
 // color2 alternative
-$z-switch-color2-off    : #FAFAFA
-$z-switch-color2-on     : #FAFAFA
+$z-switch-color2-off    : #454846
+$z-switch-color2-on     : #454846
+$z-switch-color2-slider : #B4B6B5
 ```
 Here is an example with custom colors :
 
