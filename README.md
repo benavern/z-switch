@@ -149,3 +149,8 @@ $z-switch-slider : #3ed421
 
 ![screenshot5](img/screenshot5.jpg)
 
+## Disabled
+
+When the checkbox is disabled, switches will become transparent and no action is possible on it:
+
+![screenshot6](img/screenshot6.jpg)

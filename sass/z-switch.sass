@@ -81,6 +81,12 @@ $z-switch-color2-on     : #FAFAFA
             .z-switch--slider
                 transform: translateX(1em)
 
+        &:disabled + .z-switch--container
+            opacity: .3
+
+            &:hover
+                cursor: not-allowed
+
 
     // alt colors
     &.z-switch-color1
